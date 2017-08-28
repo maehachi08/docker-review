@@ -26,23 +26,52 @@
 			<div class="slides">
 
 <section data-markdown>
-    <script type="text/template">
+<script type="text/template">
 
-## Docker 1.11
+### Docker 1.11 から 1.12 での変更
 
-A paragraph with some text and a [link](http://hakim.se).
+  * Swarm 機能が統合(docker swarm)
+  * overlay2 graphdriver
 
-    </script>
+### Hasteでの変更
+
+  1. --live-restore 追加
+    * docker deamonが停止してもコンテナを稼動させ続けることが可能になりました
+       * dockerd アップデートなどのメンテ時でもコンテナを停止させずに可能です
+  2. --userland-proxy=false を追加
+
+  overlay2
+
+
+</script>
 </section>
 
 <section data-markdown>
-    <script type="text/template">
-## Docker 1.12
+<script type="text/template">
+## Docker 1.12 から 1.13 での変更
+
+  * Dockerfileの MAINTAINER 命令が非推奨
+  * 
 
 A paragraph with some text and a [link](http://hakim.se).
-    </script>
+</script>
 </section>
 
+<section data-markdown>
+<script type="text/template">
+### Docker 17.03
+
+  * monthly release cycle 方式でリリース
+     * リリースサイクルが月に一度でなり、 YYYY.MM versioning となった
+     * moby/moby の現在のTaggingは v17.05.0-ce まで存在する
+
+
+  * Dockerfileの MAINTAINER 命令が非推奨
+  * 
+
+A paragraph with some text and a [link](http://hakim.se).
+</script>
+</section>
 
 			</div>
 		</div>
